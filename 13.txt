@@ -1,0 +1,17 @@
+
+CONSIGNMENT DETAILS
+ConsignmentID : 13
+Volume : 250
+Weight : 32
+Source : Andheri
+Destination : Deccan
+Distance : 1125
+Cost : 16704
+SENDER DETAILS :
+Name : aa
+Address : mm
+PIN : 35312
+RECEIVER DETAILS :
+Name : nn
+Address : pp
+PIN : 35456

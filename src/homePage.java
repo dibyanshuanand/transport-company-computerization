@@ -1,17 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author Aurghya Maity
- */
-import java.io.*;
-import java.sql.*;
 import javax.swing.*;
-import java.util.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
 public class homePage extends javax.swing.JFrame {
     Connection conn;
@@ -148,7 +138,6 @@ public class homePage extends javax.swing.JFrame {
               JOptionPane.showMessageDialog(null, e);
           }
 //        System.out.println("Runnning");
-//        if(jPasswordField1.getText().equals("aurghya"))System.out.println("Success");
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed

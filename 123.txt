@@ -1,0 +1,17 @@
+
+CONSIGNMENT DETAILS
+ConsignmentID : 123
+Volume : 240
+Weight : 24
+Source : Andheri
+Destination : Deccan
+Distance : 1400
+Cost : 6552
+SENDER DETAILS :
+Name : aa
+Address : asd
+PIN : 24124
+RECEIVER DETAILS :
+Name : bb
+Address : dfs
+PIN : 43634

@@ -1,21 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author Aurghya Maity
- */
-import java.sql.*;
 import javax.swing.*;
-import java.io.*;
-import java.util.*;
-import java.awt.*; 
-import java.awt.event.*;
+import javax.swing.table.DefaultTableModel;
+import java.io.FileWriter;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.text.SimpleDateFormat;
-import javax.swing.table.*;
+import java.util.ArrayList;
 
 public class employeeLogin extends javax.swing.JFrame {
     Connection conn;
@@ -1044,6 +1035,9 @@ public class employeeLogin extends javax.swing.JFrame {
            pst.setString(13,jTextField9.getText());
            pst.setString(14,jTextField10.getText());
            pst.setString(15,"");
+
+           System.out.println("Date registered: " + s);
+
            pst.execute();
            JOptionPane.showMessageDialog(null,"Consignment Registered");
            
@@ -1501,7 +1495,7 @@ public class employeeLogin extends javax.swing.JFrame {
             pst=conn.prepareStatement(query);
             pst.setString(1,Branch);
             rs=pst.executeQuery();
-            while(rs.next()){
+            while(rs.next()) {
                 String add1=rs.getString("ConsignmentID");
                 String add2=rs.getString("Volume");
                 String add3=rs.getString("Weight");
